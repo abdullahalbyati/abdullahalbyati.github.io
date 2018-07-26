@@ -26,10 +26,6 @@ h6 {
     padding: 50px;
 }
 
-h1 {
-    font-size: 6rem;
-    line-height: 5.5rem;
-}
 
 h2 {
     font-size: 3.5rem;
@@ -163,7 +159,7 @@ nav {
 }
 
 /*==================================================
-                  BUTTON (Generic)
+                  BUTTON 
 ====================================================*/
 
 .btn-general {
@@ -243,10 +239,6 @@ section.resume-section .resume-item .resume-date {
     background-color: #2196f3 !important;
 }
 
-.text-primary {
-    color: #2196f3 !important;
-}
-
 /*==================================================
                       ABOUT
 ====================================================*/
@@ -273,14 +265,22 @@ section.resume-section .resume-item .resume-date {
 #about p {
     color: aliceblue;
     text-shadow: none;
+    font-weight: 500;
 }
 
-.sub {
-    text-shadow: none;
+#headersub{
+    
+    padding-top: 20px;
 }
 
 #about h1 {
-    /*font-size: 100%;*/
+text-align: center;
+max-width: 100%;
+    height: auto;
+    font-weight: 900;
+    font-size: 40px;
+    padding-bottom: 10px;
+    padding-top: 20px;
 }
 
 #about .wise {
@@ -295,7 +295,7 @@ section.resume-section .resume-item .resume-date {
 
 .wise:hover {
     position: relative;
-    cursor: pointer;
+    cursor:auto;
     
 }
 .wise:hover:after {
@@ -790,13 +790,14 @@ section.resume-section .resume-item .resume-date {
 ======================================================*/
 
 #contact {
-    padding: 50px 0;
+    padding: px 0;
     
 }
 
 #contact .contact-cont h3 {
     color: #555;
     font-size: 45px;
+    padding-top: 0;
 }
 
 #contact .contact-cont p {
@@ -956,6 +957,5 @@ section.resume-section .resume-item .resume-date {
     div {
         max-width: 100%;
         height: auto;
-    }
-  
+    } 
 }
