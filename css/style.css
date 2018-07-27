@@ -266,6 +266,8 @@ section.resume-section .resume-item .resume-date {
     color: aliceblue;
     text-shadow: none;
     font-weight: 500;
+    padding-top: 1px;
+    margin-top: 1px;
 }
 
 #headersub{
@@ -285,25 +287,6 @@ max-width: 100%;
 
 #about .wise {
     color: #2196f3
-}
-}
-.wise:hover:after {
-    
-    content: url(img/wise.jpg); 
-    display: block;
-}
-
-.wise:hover {
-    position: relative;
-    cursor:auto;
-    
-}
-.wise:hover:after {
-    content: url(img/wise.jpg); 
-    display: block;
-    position: absolute;
-    left:200px; 
-    top: -70px; 
 }
 
 /*==================================================
@@ -403,7 +386,7 @@ max-width: 100%;
     max-width: 100%;
     min-height: 100%;
     margin: 0;
-    padding: 0;
+    padding: 25PX;
     text-align: left;
     border: none;
     border-radius: 0;
@@ -414,72 +397,47 @@ max-width: 100%;
 
 .portfolio-modal .modal-dialog .container{
     
-    padding-left: 35px;
+    padding-left: 15px;
     
 }
 
-.portfolio-modal .title-bar {
-    padding: 0 0 50px 0;
-}
-
-.portfolio-modal .title-bar h1 {
-    visibility: initial;
-    animation-name: initial;
+.portfolio-modal .title-bar h2{
+    font-size: 2rem;
+    text-align: center;
 }
 
 .portfolio-modal .modal-dialog .modal-content {
-    padding: 10px 0 100px 0;
     border: 0;
-    border-radius: 0;
-}
-
-.portfolio-modal .modal-dialog .modal-content img {
-    margin-bottom: 30px;
+    border-radius: 5PX;
 }
 
 .portfolio-modal .modal-dialog .modal-content .item-details {
-    margin: 30px 0;
+    margin: 30px;
 }
 
 .portfolio-modal .close-modal {
-    position: sticky;
-    top: 25px;
-    right: 25px;
-    width: 75px;
-    height: 75px;
-    cursor:pointer;
-    color: coral;
+    overflow: hidden;
+    background-image: url(../img/sidebar.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: sticky; 
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+.close-modal i {
+    float: left;
+    display: block;
+    color: #f2f2f2;
     text-align: center;
+    padding: 14px 16px;
     
 }
-
-.portfolio-modal .close-modal:hover {
+.close-modal i:hover {
     color: cornflowerblue;
-}
-
-.portfolio-modal .close-modal .lr {
-    /* Safari and Chrome */
-    z-index: 1051;
-    width: 1px;
-    height: 75px;
-    margin-left: 35px;
-    /* IE 9 */
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    background-color: #2C3E50;
-}
-
-.portfolio-modal .close-modal .lr .rl {
-    /* Safari and Chrome */
-    z-index: 1052;
-    width: 1px;
-    height: 75px;
-    /* IE 9 */
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-    background-color: #2C3E50;
+    cursor: pointer;
+    
 }
 
 .portfolio-modal .modal-backdrop {
@@ -487,9 +445,10 @@ max-width: 100%;
     opacity: 0;
 }
 
-@media (max-width: 850px) {
-    .portfolio-modal .close-modal {
-            
+@media (max-width: 600px) {
+   .portfolio-modal .modal-dialog {
+    padding: 0;
+
     }
 }
 
