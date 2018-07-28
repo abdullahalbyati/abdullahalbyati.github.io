@@ -589,9 +589,7 @@
                             <p>This project provided a medical center an operational network design which will digitize the medical record system and upgrade the centers current LAN network to a secure wireless network that covers the entire medical center campus area.
                             </p>
 
-                            <div>
-                                <div class='embed-container'> <iframe class='scribd_iframe_embed' title='Network Design' src='https://www.scribd.com/embeds/383637090/content?start_page=1&view_mode=scroll&access_key=key-6nCdP3CD3uZI1z8PAEE0&show_recommendations=true' data-auto-height='false' data-aspect-ratio='0.7729220222793488' scrolling='no' id='doc_72387' frameborder='0'>  </iframe></div>
-                            </div>
+                                <div class='embed-container'> <iframe title='Network Design' src='https://www.scribd.com/embeds/383637090/content?start_page=1&view_mode=scroll&access_key=key-6nCdP3CD3uZI1z8PAEE0' data-auto-height='false' scrolling='yes'>  </iframe></div>
 
                             <div style="padding: 25px; text-align: left;">
                                 <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
@@ -639,7 +637,7 @@
                                 </iframe>
                             </div>
 
-                            <div style="padding: 35px;">
+                            <div class="project">
                                 <h3>The Dashboard</h3>
                                 <p>In the PowerBI dashboard above I analyzed the data below to represent the probability of each team winning their next game based on their performance in the world cup so far. Read below to learn how I created this prediction.</p>
                                 <h3>The Data</h3>
@@ -1360,7 +1358,8 @@
                                 <iframe src="https://app.powerbi.com/view?r=eyJrIjoiYTk1NWRhZWUtZWQ4ZC00NDVkLWE1ZDAtZjI5ZTJlZTFiNDhkIiwidCI6Ijg2M2EzNGYwLWM5NmEtNDA3NC04MDk3LWEwNGM1YWE0M2NjYiIsImMiOjN9" allowfullscreen="">
                                 </iframe>
                             </div>
-
+                            
+                            <div class="project">
                             <p><strong>The Dashboard</strong></p>
                             <p><br />In the PowerBI dashboard above I analyzed the data below to represent the probability of each team winning their next game based on their performance in the world cup so far. Read below to learn how I created this prediction.</p>
                             <p><br /><strong>The Data</strong></p>
@@ -1578,7 +1577,7 @@
                                 <p style="padding-left: 30px;">The relationship between inputs and outputs is learned from training the neural network on the input data. The direction of the graph proceeds from the inputs through the hidden layer and to the output layer. All nodes in a layer are connected by the weighted edges to nodes in the next layer.</p>
                                 <p style="padding-left: 30px;">To compute the output of the network for a particular input, a value is calculated at each node in the hidden layers and in the output layer. The value is set by calculating the weighted sum of the values of the nodes from the previous layer. An activation function is then applied to that weighted sum."</p>
                             </blockquote>
-                            <p>In order to make sure the algorithm works I added a Win/Loss column to the data set and used that column as the labeled data column and all other columns (except team name) as the features data. When running the model in Microsoft Azure the algorithm predicts all 8 teams as winners and add a scored label column (probability of winning) to the data set as an output. Check out the full <a href="https://gallery.cortanaintelligence.com/Experiment/FIFA-World-Cup-Prediction-Experiment" target="_blank">Microsoft Azure Machine Learning experiment</a>.</p>
+                            <p>In order to make sure the algorithm works I added a Win/Loss column to the data set and used that column as the labeled data column and all other columns (except team name) as the features data. When running the model in Microsoft Azure the algorithm predicts all 8 teams as winners and add a scored label column (probability of winning) to the data set as an output. Check out the full <a href="https://gallery.cortanaintelligence.com/Experiment/FIFA-World-Cup-Prediction-Experiment" target="_blank">Microsoft Azure Machine Learning experiment</a>.</p></div>
 
                             <div style="padding: 25px; text-align: left;">
                                 <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
@@ -1627,7 +1626,8 @@
                                 <iframe src="https://app.powerbi.com/view?r=eyJrIjoiMmI4NmVhYWEtYzUwMC00MjZkLWFmYjgtODAwNTNmOWE4Njg4IiwidCI6Ijg2M2EzNGYwLWM5NmEtNDA3NC04MDk3LWEwNGM1YWE0M2NjYiIsImMiOjN9" allowfullscreen="">
                                 </iframe>
                             </div>
-
+                            
+                            <div class="project">
                             <p>&nbsp;</p>
                             <p><strong>The Dashboard</strong></p>
                             <p><br />In the dashboard above I analyzed the data from the teams' performance during the group stage of the world-cup to predict the winner of each game during the round of 16.</p>
@@ -1635,7 +1635,8 @@
                             <p><br />I collected the data from <a href="https://www.foxsports.com/soccer/fifa-world-cup/stats" target="_blank">https://www.foxsports.com/soccer/fifa-world-cup/stats</a><br />After careful consideration of which features to use I decided on the features in the table below to build my machine learning model (Some of my past soccer experience played a role on deciding which data is more important)</p>
                             <p>I also utilized data from <a href="https://data.world/sawya/football-world-cup-2018-dataset" target="_blank">https://data.world/sawya/football-world-cup-2018-dataset</a> using the SQL query extract the players from the qualified teams.</p>
 
-                            <table class="tg">
+                                <div class="tg-wrap">
+                                <table class="tg">
                                 <tbody align="center">
                                     <tr>
                                         <th class="tg-amwm">
@@ -2081,7 +2082,7 @@
                                     </tr>
                                 </tbody>
                             </table>
-
+                                </div>
                             <p>&nbsp;</p>
                             <p><strong>The Code</strong></p>
                             <p><br />Below is the Python code to connect to the Microsoft Azure Machine Learning Experiment follow the instruction in the code for more info.</p>
@@ -2100,7 +2101,7 @@
                             <p><strong>The Prediction </strong></p>
                             <p><br />The algorithm takes into account all columns (features) except the team name of the dataset to train and predict the chances of winning (W column) after running the experiment all you need to do is feed it the required numbers and it will give each team a percentage (probability of winning).</p>
                             <p>Let&rsquo;s take for example Spain vs Russia match, Spain was favorite to win but the machine learning algorithm predicted Russia with 1.7 chance of winning and Spain with 1.4 chance of winning. Russia actually won the game as my model predicted.</p>
-                            <p>The same scenario worked with Argentina vs France where many favorite Argentina to win but my model predicted France to win. My prediction model takes into account the team performance in the group stage and uses those features to predict the outcome.</p>
+                            <p>The same scenario worked with Argentina vs France where many favorite Argentina to win but my model predicted France to win. My prediction model takes into account the team performance in the group stage and uses those features to predict the outcome.</p></div>
 
                             <div style="padding: 25px; text-align: left;">
                                 <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
@@ -2147,6 +2148,8 @@
                                 <iframe src="https://rstudio-pubs-static.s3.amazonaws.com/306074_ee60773f13b64a988065207b4858aaba.html" style="border:0">
   </iframe>
                             </div>
+                            
+                            <div class="project">
                             <p>&nbsp;</p>
                             <p><strong>The Data</strong></p>
                             <p><br />During hurricane Irma, I was stationed in Hawaii but I wanted to help the preparation effort as much as I can, and since the hurricane path was so hard to predict, Florida's emergency services opened many shelters scattered around Florida.</p>
@@ -2168,6 +2171,7 @@
                             <div class="embed-container">
                                 <iframe src="https://trinket.io/embed/R/e0fb893c85?toggleCode=true" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen="">
   </iframe>
+                            </div>
                             </div>
 
                             <div style="padding: 25px; text-align: left;">
@@ -2210,12 +2214,11 @@
                                     <div class="heading-border"></div>
                                 </div>
                             </div>
-                            <div>
-                                <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.2493%; padding-top: 56px;">
+                                <div class="project" id="shinnyapp" >
                                     <iframe src="https://albyati.shinyapps.io/next-word-prediction/_w_2c624949/#" style="border: 0; top: 0; left: 0; width: 100%; height: 110% ; position: absolute;" allowfullscreen=""></iframe>
                                 </div>
-                            </div>
-                            <div style="padding-top: 10%">
+                            
+                            <div class="project">
                                 <p><strong>The Interface</strong></p>
                                 <p><br />I used shinydashboard R package in RStudio to create the layout for the app. In addition, I used shinydashboardthemes package to create the theme, Shiny Dashboard Themes package is still in beta but it worked perfectly for the purpose of this app.</p>
                                 <p><br /><strong>The Data</strong></p>
@@ -2274,12 +2277,10 @@
                                     <div class="heading-border"></div>
                                 </div>
                             </div>
-                            <div>
                                 <div class="embed-container">
                                     <iframe src="https://rstudio-pubs-static.s3.amazonaws.com/304166_6f331bcbe22e4555aeffa1c9ae5bc10d.html" style="border:0"></iframe>
                                 </div>
-                            </div>
-                            <div style="padding-top: 15px">
+                            <div class="project">
                                 <p><strong>The Data</strong></p>
                                 <p><br />In this "mini" project I used leaflet and shiny libraries for R to create an interactive map to show the countries that produce coffee around the world. The data was collected from multiple sources, the links were manually created and added to the data set. <a href="https://irp-cdn.multiscreensite.com/5a37bd1f/files/uploaded/Coffee%20Database.xlsx">Download the data here</a> </p>
                                 <p><strong>The Code</strong></p>
