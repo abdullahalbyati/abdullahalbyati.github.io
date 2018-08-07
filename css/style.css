@@ -3,7 +3,7 @@
 body {
     font-family: 'Open Sans', serif;
     padding-top: 54px;
-    color: #868e95;
+    color: black;
 }
 
 @media (min-width: 992px) {
@@ -22,7 +22,7 @@ h6 {
     font-family: 'Saira Extra Condensed', serif;
     font-weight: 700;
     text-transform: uppercase;
-    color: #343a40;
+    color: #085078";
     padding: 50px;
 }
 
@@ -32,13 +32,13 @@ h2 {
 }
 
 a {
-    color: #2196f3;
+    color: #085078;
 }
 
 a:hover,
 a:focus,
 a:active {
-    color: #0f72c1;
+    color: #85d8ce;
 }
 
 .subheading {
@@ -46,9 +46,6 @@ a:active {
     font-weight: 500;
     font-family: 'Saira Extra Condensed', serif;
     font-size: 1.35rem;
-}
-
-
 }
 
 
@@ -60,17 +57,16 @@ blockquote {
     margin-right: 40px;
 }
 
-
 /*==================================================
                   SOCIAL-ICON
 ====================================================*/
 
 .list-social-icons a {
-    color: #495057;
+    color: #085078;
 }
 
 .list-social-icons a:hover {
-    color: #2196f3;
+    color: #85d8ce;
 }
 
 .list-social-icons a .fa-lg {
@@ -82,7 +78,7 @@ blockquote {
 }
 
 .list-icons .list-inline-item i:hover {
-    color: #2196f3;
+    color: #85d8ce;
 }
 
 /*==================================================
@@ -90,12 +86,9 @@ blockquote {
 ====================================================*/
 
 nav {
-    background: #b92b27;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #1565C0, #b92b27);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #1565C0, #b92b27);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #085078;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -229,12 +222,10 @@ section.resume-section .resume-item .resume-date {
 ====================================================*/
 
 #about {
-    background: #b92b27;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #1565C0, #b92b27);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #1565C0, #b92b27);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #085078;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 #about div {
@@ -258,7 +249,7 @@ section.resume-section .resume-item .resume-date {
 }
 
 .subheading {
-    color: cornsilk;
+    color: #ffff;
 }
 
 #about h1 {
@@ -287,12 +278,18 @@ section.resume-section .resume-item .resume-date {
 #experience .card h4 {
     font-family: 'Roboto Condensed', sans-serif;
     text-transform: none;
-    color: #555;
+    color: #085078";
 }
 
-#experience .mb-3 {
+#experience h5 {
     text-align: center;
+    color: #085078";
 }
+
+#experience .mb-3 h5 {
+    color: #085078";
+}
+
 
 /*====================================================
                    PORTFOLIO
@@ -406,16 +403,14 @@ section.resume-section .resume-item .resume-date {
 
 .portfolio-modal .close-modal {
     overflow: hidden;
-    background: #b92b27;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #1565C0, #b92b27);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #1565C0, #b92b27);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     position: sticky;
     top: 0;
     width: 100%;
     z-index: 10;
+    background: #085078;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .close-modal i {
@@ -507,12 +502,9 @@ section.resume-section .resume-item .resume-date {
 #skills {}
 
 .skill-cover {
-    background: #b92b27;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #1565C0, #b92b27);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #1565C0, #b92b27);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #085078;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .skill-cover h3 {
