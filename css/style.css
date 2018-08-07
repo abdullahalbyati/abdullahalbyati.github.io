@@ -86,7 +86,7 @@ blockquote {
 ====================================================*/
 
 nav {
-background: #085078;  /* fallback for old browsers */
+background: #85d8ce;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
@@ -94,6 +94,12 @@ background: linear-gradient(to right, #85D8CE, #085078); /* W3C, IE 10+/ Edge, F
 #sideNav .navbar-nav .nav-item .nav-link {
     font-weight: 600;
     text-transform: uppercase;
+    color: antiquewhite;
+}
+
+#sideNav .navbar-nav .nav-item .nav-link:hover {
+    color:#085078;
+
 }
 
 @media (min-width: 992px) {
@@ -133,6 +139,7 @@ background: linear-gradient(to right, #85D8CE, #085078); /* W3C, IE 10+/ Edge, F
     }
     #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
         display: block;
+
     }
 }
 
@@ -141,7 +148,8 @@ background: linear-gradient(to right, #85D8CE, #085078); /* W3C, IE 10+/ Edge, F
 ====================================================*/
 
 .btn-general {
-    background-color: transparent;
+    background: #85D8CE; 
+    color: antiquewhite;
     text-align: center;
     border-width: 1px;
     border-radius: 0px;
@@ -152,28 +160,27 @@ background: linear-gradient(to right, #85D8CE, #085078); /* W3C, IE 10+/ Edge, F
 }
 
 .btn-white {
-    border-color: #2196f3;
-    background-color: #2196f3;
-    color: #fff;
+    background: #085078;
+    color: antiquewhite;
 }
 
 .btn-white:hover,
 .btn-white:focus {
-    background-color: transparent;
-    color: #2196f3;
+    background: #85D8CE;
     cursor: pointer;
+    color: #085078;
 }
 
 .btn-green {
-    border-color: #2196f3;
-    color: #2196f3;
+    background: #085078;
+    color: antiquewhite;
 }
 
 .btn-green:hover,
 .btn-green:focus {
-    background-color: #2196f3;
-    color: #fff;
+    background: #85D8CE;
     cursor: pointer;
+    color: #085078;
 }
 
 /*==================================================
@@ -329,11 +336,11 @@ background: linear-gradient(to left, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Fi
     -moz-transition: all ease 0.5s;
     transition: all ease 0.5s;
     opacity: 0;
-    background: rgba(54, 160, 245, 0.73);
+    background: #85d8ce;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption-port:hover {
-    opacity: 1;
+    opacity: 0.90;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption-port .caption-port-content {
@@ -785,14 +792,18 @@ background: linear-gradient(to left, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Fi
 /*====================================================
                    CONTACT
 ======================================================*/
-
-#contact {
-    padding: px 0;
+#contact-cover {
+    background: #085078;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    align-content:center;
 
 }
-
+#contact {
+    margin: 50px;
+}
 #contact .contact-cont h3 {
-    color: #555;
+    color: antiquewhite;
     font-size: 45px;
     padding-top: 0;
 }
@@ -800,11 +811,6 @@ background: linear-gradient(to left, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Fi
 #contact .contact-cont p {
     padding-right: 20px;
     font-size: 15px;
-}
-
-#contact .contact-cont2 address,
-#contact .contact-cont2 address a {
-    color: #666;
 }
 
 .con-form input {
