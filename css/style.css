@@ -63,6 +63,7 @@ blockquote {
 
 .list-social-icons a {
     color: #085078;
+    text-shadow: 3px 3px 10px black;
 }
 
 .list-social-icons a:hover {
@@ -89,6 +90,8 @@ nav {
 background: #85d8ce;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -122,6 +125,8 @@ background: linear-gradient(to right, #85D8CE, #085078); /* W3C, IE 10+/ Edge, F
         max-width: 10rem;
         max-height: 10rem;
         border: 0.5rem solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
     }
     #sideNav .navbar-collapse {
         display: flex;
@@ -157,6 +162,8 @@ background: linear-gradient(to right, #85D8CE, #085078); /* W3C, IE 10+/ Edge, F
     padding: 10px 15px;
     font-weight: 400;
     text-transform: uppercase;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .btn-white {
@@ -247,16 +254,15 @@ background: linear-gradient(to left, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Fi
 
 }
 
-#about p {
-    color: aliceblue;
-    text-shadow: none;
-    font-weight: 500;
-    padding-top: 1px;
-    margin-top: 1px;
-}
+#about .quote {
+    background: rgba(255, 255, 255, 0.50);
+    width: 100%; /* Full width */
+    padding: 40px; /* Some padding */
+    color: antiquewhite;
+    text-shadow: 1px 1px 10px black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 40px;
 
-.subheading {
-    color: #ffff;
 }
 
 #about h1 {
@@ -267,11 +273,10 @@ background: linear-gradient(to left, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Fi
     font-size: 40px;
     padding-bottom: 10px;
     padding-top: 20px;
-    color: cornsilk;
-}
+    color: antiquewhite;
+    text-shadow: 3px 3px 10px black;
 
-#about .wise {
-    color: #343a40;
+    
 }
 
 /*==================================================
@@ -297,6 +302,9 @@ background: linear-gradient(to left, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Fi
     color: #085078";
 }
 
+#experience .mb-5{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 /*====================================================
                    PORTFOLIO
@@ -326,6 +334,8 @@ background: linear-gradient(to left, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Fi
     max-width: 400px;
     margin: 0 auto;
     cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 #portfolio .portfolio-item .portfolio-link .caption-port {
@@ -337,6 +347,8 @@ background: linear-gradient(to left, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Fi
     transition: all ease 0.5s;
     opacity: 0;
     background: #85d8ce;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 #portfolio .portfolio-item .portfolio-link .caption-port:hover {
@@ -352,6 +364,9 @@ background: linear-gradient(to left, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Fi
     margin-top: -12px;
     text-align: center;
     color: white;
+    text-shadow: 3px 3px 10px black;
+
+    
 }
 
 #portfolio .portfolio-item .portfolio-link .caption-port .caption-port-content i {
@@ -417,7 +432,7 @@ background: linear-gradient(to left, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Fi
     background: #085078;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .close-modal i {
@@ -528,6 +543,8 @@ background: linear-gradient(to left, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Fi
 
 .skill-item i {
     color: #2196f3;
+    text-shadow: 3px 3px 10px black;
+
 }
 
 .skill-item h2 {
@@ -596,7 +613,7 @@ background: linear-gradient(to left, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Fi
 #award-box .award {
     width: 50%;
     clear: both;
-    position: relative;
+    position: relative;   
 }
 
 #award-box .award:before,
@@ -641,6 +658,7 @@ background: linear-gradient(to left, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Fi
     right: -13px;
     z-index: 1;
     transform: rotate(45deg);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #award-box .award-icon:before {
@@ -669,6 +687,8 @@ background: linear-gradient(to left, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Fi
     border: 1px solid transparent;
     position: relative;
     transition: all 0.3s ease 0s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 #award-box .award:hover .award-content {
