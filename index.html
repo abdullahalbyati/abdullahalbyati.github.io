@@ -2464,7 +2464,7 @@
 
 	//Open modal con url
 	var url      	= window.location.href;
-	var modal_code 	= getParameterByName("modal",url);
+	var modal_code 	= getParameterByName("portfolio-modal modal fade",url);
 
 	if(window.location.href.indexOf('?modal='+modal_code) != -1) {
     	$('#myModal'+modal_code).modal('show');
