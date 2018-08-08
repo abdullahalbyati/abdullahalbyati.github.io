@@ -2441,6 +2441,15 @@
         })(jQuery); // End of use strict
     </script>
     <script>
+  //shortcut for $(document).ready
+  $(function(){
+      if(window.location.hash) {
+          var hash = window.location.hash;
+          $(hash).modal('toggle');
+      }
+  });
+</script>
+    <script>
         $(document).ready(function() {
 
             $(".filter-b").click(function() {
